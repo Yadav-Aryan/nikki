@@ -22,7 +22,8 @@
 }
 
 .continue{
-    background-color: rgb(74, 74, 252);
+    background-color: rgb(100, 100, 254);
+    font-size: 0.9em;
     color: white;
     padding: 2%;
     width: 70%;
@@ -62,14 +63,14 @@ input{
 
 .forgotPass{
     color: rgb(74, 74, 252);
-    margin-left: 55%;
+    margin-left: 50%;
     font-size: 0.9rem;
 }
 
 .btnLogin{
     width: 78%;
     color: white;
-    background-color: rgb(74, 74, 252);
+    background-color: rgb(100, 100, 254);
     padding: 2%;
     margin-top: 5%;
     border: none;
