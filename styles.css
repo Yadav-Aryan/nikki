@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.instagram{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.imgInstagram{
+    width: 50%;
+}
+
+.fbButton{
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continue{
+    background-color: rgb(74, 74, 252);
+    color: white;
+    padding: 2%;
+    width: 70%;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.or{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hrOr{
+    width: 31%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.credentials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 73%;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.forgotPass{
+    color: rgb(74, 74, 252);
+    margin-left: 55%;
+    font-size: 0.9rem;
+}
+
+.btnLogin{
+    width: 78%;
+    color: white;
+    background-color: rgb(74, 74, 252);
+    padding: 2%;
+    margin-top: 5%;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+.donot{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.signUp{
+    color: rgb(74, 74, 252);
+    font-weight: 600;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.from{
+    margin-top: 3%;
+    font-size: 0.8rem;
+}
+
+.meta{
+    width: 12%;
+}
